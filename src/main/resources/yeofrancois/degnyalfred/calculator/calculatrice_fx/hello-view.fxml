@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="373.0" prefWidth="409.0" style="-fx-background-color: #d4ae7f;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yeofrancois.degnyalfred.calculator.calculatrice_fx.HelloController">
+
+    <children>
+        <TextField fx:id="ecran" alignment="BOTTOM_LEFT" editable="false" layoutX="22.0" layoutY="17.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="101.0" prefWidth="367.0" text="0">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </TextField>
+        <FlowPane layoutX="25.0" layoutY="125.0" prefHeight="180.0" prefWidth="180.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#click_chiffre1" prefHeight="60.0" prefWidth="60.0" text="1">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Button>
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#click_chiffre2" prefHeight="60.0" prefWidth="60.0" text="2">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Button>
+                <Button layoutX="70.0" layoutY="10.0" mnemonicParsing="false" onAction="#click_chiffre3" prefHeight="60.0" prefWidth="60.0" text="3">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Button>
+                <Button layoutX="130.0" layoutY="10.0" mnemonicParsing="false" onAction="#click_chiffre4" prefHeight="60.0" prefWidth="60.0" text="4">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Button>
+                <Button layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#click_chiffre5" prefHeight="60.0" prefWidth="60.0" text="5">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Button>
+                <Button layoutX="70.0" layoutY="70.0" mnemonicParsing="false" onAction="#click_chiffre6" prefHeight="60.0" prefWidth="60.0" text="6">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Button>
+                <Button layoutX="130.0" layoutY="70.0" mnemonicParsing="false" onAction="#click_chiffre7" prefHeight="60.0" prefWidth="60.0" text="7">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Button>
+                <Button layoutX="10.0" layoutY="130.0" mnemonicParsing="false" onAction="#click_chiffre8" prefHeight="60.0" prefWidth="60.0" text="8">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Button>
+                <Button layoutX="70.0" layoutY="130.0" mnemonicParsing="false" onAction="#click_chiffre9" prefHeight="60.0" prefWidth="60.0" text="9">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Button>
+            </children>
+        </FlowPane>
+        <VBox layoutX="215.0" layoutY="125.0" prefHeight="240.0" prefWidth="60.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#additionAction" prefHeight="60.0" prefWidth="60.0" text="+">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Button>
+                <Button layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#soustractionAction" prefHeight="60.0" prefWidth="60.0" text="-">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </Button>
+            <Button mnemonicParsing="false" onAction="#multiplicationAction" prefHeight="60.0" prefWidth="60.0" text="*">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#divisionAction" prefHeight="60.0" prefWidth="60.0" text="/">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+            </children>
+        </VBox>
+        <Text fx:id="text_du_haut" layoutX="25.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="347.0">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font></Text>
+      <Button layoutX="281.0" layoutY="125.0" mnemonicParsing="false" onAction="#viderAction" prefHeight="60.0" prefWidth="109.0" text="Reset">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="281.0" layoutY="305.0" mnemonicParsing="false" onAction="#calculer" prefHeight="60.0" prefWidth="109.0" style="-fx-background-color: #574023;" text="=" textFill="#fcfcfc">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <Button layoutX="281.0" layoutY="245.0" mnemonicParsing="false" onAction="#negationAction" prefHeight="60.0" prefWidth="109.0" text="+/-">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="281.0" layoutY="185.0" mnemonicParsing="false" onAction="#effacerAction" prefHeight="60.0" prefWidth="109.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="85.0" layoutY="305.0" mnemonicParsing="false" onAction="#click_chiffre0" prefHeight="60.0" prefWidth="60.0" text="0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="25.0" layoutY="305.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" text=".">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="145.0" layoutY="305.0" mnemonicParsing="false" onAction="#moduloAction" prefHeight="60.0" prefWidth="60.0" text="\%">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
